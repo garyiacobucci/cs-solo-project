@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+
+body {
+  background-color: lightblue;
+  background-image: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)), url("https://s27363.pcdn.co/wp-content/uploads/2020/05/Best-Views-of-the-Grand-Canyon.jpg.optimal.jpg");
+  min-height: 100%;
+}
+
+h1 {
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: xxx-large;
+  color: white;
+}
+
+#flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+#main-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2;
+  justify-items: center;
+}
+
+#form-div {
+  margin-top: 100px;
+  display: block;
+  text-align: center;
+}
+
+#submit-field {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+#button {
+  margin-top: 10px;
+  padding: 10px 16px;
+  border-radius: 8px;
+}
+
+.echo {
+  font-family: 'Knewave', cursive;
+  text-align: center;
+  font-size: 1000%;
+  color: white;
+
+}

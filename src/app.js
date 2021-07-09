@@ -42,7 +42,7 @@ class NameForm extends React.Component {
     super(props);
     this.state = {
       value: '',
-      echoesArray: [''],
+      echoesArray: [],
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -58,13 +58,14 @@ class NameForm extends React.Component {
     const currentEchoes = this.state.echoesArray;
     const updatedEchoes = currentEchoes.concat(this.state.value);
     this.setState({ echoesArray: updatedEchoes });
+    this.setState({value: ''});
     event.preventDefault();
   }
 
   render() {
     return (
       <div id="form-div">
-        <form onSubmit={this.handleSubmit}>
+        <form onSubmit={this.handleSubmit} autocomplete="off">
           <label>
             <input type="text" id="submit-field" value={this.state.value} onChange={this.handleChange} />
           </label><br></br>
@@ -79,6 +80,7 @@ class NameForm extends React.Component {
 class Echoes extends React.Component {
   constructor(props) {
     super(props);
+
     this.state = {
       echo: [],
       count: 0,

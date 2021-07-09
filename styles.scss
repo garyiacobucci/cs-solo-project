@@ -3,7 +3,7 @@
 
 body {
   background-color: lightblue;
-  background-image: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)), url("https://s27363.pcdn.co/wp-content/uploads/2020/05/Best-Views-of-the-Grand-Canyon.jpg.optimal.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)), url("http://localhost:3000/assets/Background.jpg");
   min-height: 100%;
 }
 
@@ -36,12 +36,29 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   text-align: left;
+  background-color: rgba(0,0,0,0);
+  outline: none;
+  color: white;
+  text-align: center;
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: x-large;
+  padding: 10px;
+  border: 0;
+  border-bottom:2px solid #eee;
 }
 
 #button {
   margin-top: 10px;
   padding: 10px 16px;
   border-radius: 8px;
+  background-color: rgba(0,0,0,0.25);
+  outline: none;
+  border: none;
+  color: white;
+  text-align: center;
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: large;
+
 }
 
 .echo {
@@ -49,5 +66,4 @@ h1 {
   text-align: center;
   font-size: 1000%;
   color: white;
-
 }
